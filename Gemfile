@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
-
+gem 'bootstrap-sass', '3.3.6'
 gem 'minitest', group: :test
 gem 'minitest-reporters', group: :test
 gem 'guard', '~> 2.16', '>= 2.16.1'
