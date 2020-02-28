@@ -11,6 +11,7 @@ gem 'guard', '~> 2.16', '>= 2.16.1'
 gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
+gem 'bcrypt', '~> 3.1.11'
 # # Use sqlite3 as the database for Active Record
 # gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
