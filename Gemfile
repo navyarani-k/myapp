@@ -4,16 +4,18 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 
 ruby '2.7.0'
+
 gem 'bootstrap-sass', '3.3.6'
-gem 'minitest', group: :test
-gem 'minitest-reporters', group: :test
-gem 'guard', '~> 2.16', '>= 2.16.1'
-gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 gem 'bcrypt', '~> 3.1.11'
+gem 'guard', '~> 2.16', '>= 2.16.1'
+gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
+ gem 'minitest', group: :test
+gem 'minitest-reporters', group: :test
+
 # # Use sqlite3 as the database for Active Record
-# gem 'sqlite3', '~> 1.4'
+gem 'rails-controller-testing'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -37,9 +39,11 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'sqlite3', '~> 1.4.0'
+  # gem 'sqlite3', '~> 1.3', '>= 1.3.11'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  
 end
 
 group :development do
@@ -65,4 +69,4 @@ group :production do
   gem 'pg'
 end
 
-gem 'rails-controller-testing'
+
